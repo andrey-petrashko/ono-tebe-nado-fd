@@ -17,7 +17,7 @@
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a class="header__link_active" href="#main"> главная </a>
+            <a class="link_active" href="#main"> главная </a>
           </li>
           <li class="header__links-list-item">
             <a href="#lots"> посмотреть лоты </a>
@@ -36,13 +36,13 @@
         />
       </a>
       <!-- контакты -->
-      <address class="contacts">
-          <a href="tel:+99995555555"> +9 999 555 5555 </a>
-          <a href="mailto:info@sobaka.ge"> info@sobaka.ge </a>
-          <span class="contacts_address_text">
-            наб. Принсенграхт 263-
-            <br />265, Амстердам
-          </span>
+      <address class="header__contacts">
+        <a href="tel:+99995555555"> +9 999 555 5555 </a>
+        <a href="mailto:info@sobaka.ge"> info@sobaka.ge </a>
+        <span class="contacts_address_text">
+          наб. Принсенграхт 263-
+          <br />265, Амстердам
+        </span>
       </address>
     </header>
     <!--     Основной раздел     -->
@@ -59,68 +59,60 @@
           <p class="cover__description-text">
             аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button" type="button">
-            сделать ставку
-          </button>
+          <button class="bet-button" type="button">сделать ставку</button>
         </div>
       </section>
       <!--     Секция лоты       -->
       <section class="lots">
         <h2 class="lots__heading">лоты</h2>
-        <div class="lots__card-list">
+        <ul class="card-list">
           <!--     1ая карточка      -->
-          <div class="lots__card-list-item card_type_film">
-            <div class="overlay"></div>
-            <div class="card">
-              <a class="card-link-text">
+          <li>
+            <a class="lots__card-list-item card_type_film">
+              <article class="overlay"></article>
+              <h3 class="card-header">
                 Фильм режиссёра, который бросил киношколу
-              </a>
-
-                <p class="card__text">
-                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                  ставка, если бы вы не знали, что режиссёр — Пол Томас
-                  Андерсон?
-                </p>
-
-            </div>
-          </div>
+              </h3>
+              <p class="card__text">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+            </a>
+          </li>
           <!--     2ая карточка      -->
-          <div class="lots__card-list-item card_type_book">
-            <div class="overlay"></div>
-            <div class="card">
-              <a class="card-link-text">
+          <li>
+            <a class="lots__card-list-item card_type_book">
+              <article class="overlay"></article>
+              <h3 class="card-header">
                 Книга, где описан один скучный день из жизни рекламного агента
-              </a>
-              
-                <p class="card__text">
-                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
-                  с переходами на древнеанглийский. В ней одновременно
-                  рассказывается о 16 июня 1904 года и об истории литературы,
-                  начиная с античных времён. И это всё накладывается на
-                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                  Джеймса Джойса?
-                </p>
-              
-            </div>
-          </div>
-          <!--     3яя карточка      -->
-          <div class="lots__card-list-item card_type_picture">
-            <div class="overlay"></div>
-            <div class="card">
-              <a class="card-link-text">
+              </h3>
+              <p class="card__text">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                переходами на древнеанглийский. В ней одновременно
+                рассказывается о 16 июня 1904 года и об истории литературы,
+                начиная с античных времён. И это всё накладывается на эпическую
+                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
+                Джойса?
+              </p>
+            </a>
+          </li>
+          <!--     3ая карточка      -->
+          <li>
+            <a class="lots__card-list-item card_type_picture">
+              <article class="overlay"></article>
+              <h3 class="card-header">
                 Картина, которую повторит даже 5-летний сын маминой подруги
-              </a>
+              </h3>
+              <p class="card__text">
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                котиков... Сколько бы вы на такое поставили, если бы не знали,
+                что это — одна из революционных работ Кандинского?
+              </p>
+            </a>
+          </li>
+        </ul>
 
-                <p class="card__text">
-                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                  котиков... Сколько бы вы на такое поставили, если бы не знали,
-                  что это — одна из революционных работ Кандинского?
-                </p>
-
-            </div>
-          </div>
-        </div>
         <a class="link__look-more-text" href="#55"> посмотреть больше </a>
       </section>
       <!-- Секция   об   аукционе-->
@@ -131,16 +123,15 @@
           </a>
         </div>
         <h2 class="about__title">об аукционе</h2>
-        <p></p>
-        <p class="about__text-first-p">
+
+        <p class="about__text">
           Здесь вы не встретите очередное пафосное собрание невероятно дорогого
-          антиквариата. Наши лоты вообще не должны были попасть ни на один
+          антиквариата. Наши лоты вообще не должны были попасть <br />ни на один
           аукцион. Потому что кому нужен дневник девочки-подростка или картина,
           которую может нарисовать даже ребёнок? Кому нужны все эти странные
           вещи, созданные любителями?
         </p>
-        <p></p>
-        <p class="about__text-second-p">
+        <p class="about__text">
           Слишком сложные или, наоборот, слишком простые. Опережающие своё
           время. В пух и прах растерзанные критиками. Непринятые и непонятые.
           Когда-то они казались просто неудачными. Но, несмотря <br />на
@@ -153,19 +144,19 @@
     </main>
     <!--    Раздел подвал   -->
     <footer class="footer">
-      <address class="contacts">
-          <a href="tel:+99995555555"> +9 999 555 5555 </a>
-          <a href="mailto:info@sobaka.ge"> info@sobaka.ge </a>
-          <span class="contacts_address_text">
-            наб. Принсенграхт 263-265,
-            <br />
-            Амстердам
-          </span>
+      <address class="footer__contacts">
+        <a href="tel:+99995555555"> +9 999 555 5555 </a>
+        <a href="mailto:info@sobaka.ge"> info@sobaka.ge </a>
+        <span class="contacts_address_text">
+          наб. Принсенграхт 263-265,
+          <br />
+          Амстердам
+        </span>
       </address>
       <nav class="footer__menu">
         <ul class="footer__links-list">
-          <li class="footer__links-list-item footer__links-list-item_no-underline">
-            <a> главная </a>
+          <li class="footer__links-list-item">
+            <a class="link_active" href="#main"> главная </a>
           </li>
           <li class="footer__links-list-item">
             <a href="#lots"> посмотреть лоты </a>
@@ -175,23 +166,23 @@
           </li>
         </ul>
       </nav>
-        <ul class="footer__social-list">
-          <li>
-            <a class="social-link" href="https://youtube.com/" target="_blank">
-              <img src="./images/yt.svg" alt="youtube.com" />
-            </a>
-          </li>
-          <li>
-            <a class="social-link" href="https://vk.com/" target="_blank">
-              <img src="./images/vk.svg" alt="vk.com" />
-            </a>
-          </li>
-          <li>
-            <a class="social-link" href="https://pinterest.com/" target="_blank">
-              <img src="./images/pinterest.svg" alt="pinterest.com" />
-            </a>
-          </li>
-        </ul>
+      <ul class="footer__social-list">
+        <li>
+          <a class="social-link" href="https://youtube.com/" target="_blank">
+            <img src="./images/yt.svg" alt="youtube.com" />
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="https://vk.com/" target="_blank">
+            <img src="./images/vk.svg" alt="vk.com" />
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="https://pinterest.com/" target="_blank">
+            <img src="./images/pinterest.svg" alt="pinterest.com" />
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
