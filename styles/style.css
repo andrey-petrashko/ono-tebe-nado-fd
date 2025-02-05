@@ -53,11 +53,9 @@
 
 /* Контейнер контактов */
 
-.header__contacts {
+.contacts {
   display: flex;
   flex-direction: column;
-  padding-right: 85px;
-  margin-top: 0;
   min-width: 240px;
   justify-self: end;
   font-size: 18px;
@@ -66,6 +64,11 @@
   text-underline-offset: 4px;
   justify-content: flex-start;
 }
+
+.header__contacts {
+  padding-right: 85px;
+}
+
 
 .contacts_address_text {
   display: flex;
@@ -193,6 +196,7 @@
 .card-list {
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;  /* !!!!! добавлено по замечанию из ревью. при добавлении карточки появляется доп. ряд со смещением 25пикс !!!! */
   list-style-type: none;
   padding-bottom: 30px;
 }
@@ -235,8 +239,9 @@
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
-  text-decoration: underline;
+  text-decoration:underline;
   text-underline-offset: 3px;
+  text-decoration-skip-ink: none; /* добавил, чтобы линиия не исчезала под "Д" */
   text-decoration-thickness: 1px;
   position: relative;
   z-index: 1;
@@ -287,7 +292,6 @@
   height: 240px;
   width: 240px;
   justify-self: center;
-
   justify-content: center;
   align-items: center;
 }
@@ -319,18 +323,8 @@
 }
 
 .footer__contacts {
-  display: flex;
-  flex-direction: column;
   padding-right: 53px;
-  margin-top: 0;
-  min-width: 240px;
-  justify-self: end;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 135%;
-  text-underline-offset: 4px;
-  justify-content: flex-start;
-}
+  }
 
 /* Список ссылок */
 
